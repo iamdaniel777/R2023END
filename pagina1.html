@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./estilospag1.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">¿Que dices si lo intentamos y hacemos que el 2024 sea el mejor año? </h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media.giphy.com/media/1S9kD6xm4601O/giphy.gif">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Chi UwU</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No.</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "pagnina2.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>  
+    </body> 
